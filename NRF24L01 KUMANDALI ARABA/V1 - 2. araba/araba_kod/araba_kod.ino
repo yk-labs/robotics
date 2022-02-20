@@ -65,19 +65,19 @@ void loop() {
     analogWrite(Motor2_PWM,0);
     }
      if(y >= 800 && y <= 1023) {
-     digitalWrite(Motor1_Ileri,LOW);
-    digitalWrite(Motor1_Geri,HIGH);
-    analogWrite(Motor1_PWM,255);
-    digitalWrite(Motor2_Ileri,LOW);
-    digitalWrite(Motor2_Geri,HIGH);
-    analogWrite(Motor2_PWM,255);
-    }
-    if(y >= 0 && y <= 450) {
      digitalWrite(Motor1_Ileri,HIGH);
     digitalWrite(Motor1_Geri,LOW);
     analogWrite(Motor1_PWM,255);
     digitalWrite(Motor2_Ileri,HIGH);
     digitalWrite(Motor2_Geri,LOW);
+    analogWrite(Motor2_PWM,255);
+    }
+    if(y >= 0 && y <= 450) {
+     digitalWrite(Motor1_Ileri,LOW);
+    digitalWrite(Motor1_Geri,HIGH);
+    analogWrite(Motor1_PWM,255);
+    digitalWrite(Motor2_Ileri,LOW);
+    digitalWrite(Motor2_Geri,HIGH);
     analogWrite(Motor2_PWM,255);
     }
     if(x >= 0 && x <= 450) {
